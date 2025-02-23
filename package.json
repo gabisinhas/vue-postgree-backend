@@ -2,16 +2,41 @@
   "name": "vue-postgree-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint --ext .js -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush":"npm run lint",
+    "start":"node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "nodejs",
+    "api",
+    "crud",
+    "azure-functions",
+    "github-actions",
+    "serverless",
+    "azure",
+    "postgresql",
+    "sql",
+    "javascript"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.20.0",
     "eslint": "^9.20.1",
-    "globals": "^16.0.0"
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "eslint-friendly-formatter": "^4.0.1",
+    "express": "^4.21.2",
+    "express-promise-router": "^4.1.1",
+    "pg": "^8.13.3"
   }
 }
