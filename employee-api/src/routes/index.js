@@ -8,7 +8,7 @@ router.get('/api',(req,res) =>{
         success:'true',
         message:'Seja Bem vindo',
         version: '1.0.0'
-    })
-})
+    });
+});
 
 module.exports = router;

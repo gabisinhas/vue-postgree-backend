@@ -1,10 +1,8 @@
-import pg from 'pg'
-import { connectionString } from 'pg/lib/defaults'
 const dotenv = require('dotenv')
 
 dotenv.config()
 
-const { Pool, Client } = pg
+const { Pool, Client } = require('pg')
  
 // pools will use environment variables
 // for connection information
